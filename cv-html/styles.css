@@ -1,0 +1,117 @@
+@import url("./meyer-css-reset.css");
+
+/* CSS styles */
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: row;
+    min-height: 100dvh;
+    background-color: #6ec8f5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    max-width: 90%;
+    height: auto;
+}
+
+.title {
+    font-family: Impact, sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.left-side {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border: 3px solid red;
+}
+
+.prof-pic {
+    width: 400px;
+    height: 600px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: #F6F7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.conect,
+.profile,
+.job-xp,
+.education,
+.tech-stack,
+.projects {
+    background: #F6F7EB;
+    padding: 1rem;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-item {
+    border-radius: 15px;
+    background-color: #F6F7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    body {
+        background-color: #079feb;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left-side {
+        width: 90%;
+        height: auto;
+        padding: 0rem;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 0.5rem;
+        padding: 0rem;
+    }
+}
